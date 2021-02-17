@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+ background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 13px 16px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    margin: 12px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.center {
+  margin: auto;
+ // width: 60%;
+  padding: 10px;
+  margin-top: 20%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: DodgerBlue;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  font-family: monospace;
+  font-weight:bold;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div class="container-fluid">
+ 
+    <div class="row">
+		<div class="col-md-2">
+			<div class="sidenav">
+			  <a href="#clients">Home</a>
+			  <a href="#about">Downloaded Files</a>
+			  <a href="#services">Missing Files</a>
+			  <a href="#contact">Example</a>
+			</div>
+
+		</div>
+        <div class="col-md-10">
+            <h2 class="text-center mb-5">Email Creation Tool</h2>
+
+            <hr class="mb-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-2">
+                    <span class="anchor" id="formLogin"></span>
+                    <!-- form card login with validation feedback -->
+                    <div class="card card-outline-secondary">
+                        <div class="card-body">                                                  
+                                <div class="form-group">
+								<form method="POST" action="" enctype="multipart/form-data">
+									<label for="one">Select Base File</label>
+									<input  class="btn" type="file" name="file-1" id="one"=""></button></br>
+									<label for="two"> Select Input file</label>
+									<input class="btn" type="file" name="file-2" id="two"></button>
+									<div class="invalid-feedback"></div>
+									
+									<input type="submit" class="btn btn-primary" value="Download">								
+								</form>
+								</div>
+							<div class="progress " style=" margin-top: 18px;">
+								  <div class="progress-bar form-group" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+			<table class="table">
+				<thead class="thead-light">
+				  <tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				  </tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				  </tr><tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				  </tr><tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				  </tr>
+				 
+				</tbody>
+			  </table>
+
+                </div>
+
+            </div>
+            <!--/row-->
+
+   
+       
+
+        <!--/col-->
+    </div>
+
+</div>
+</body>
+</html>
+
+<!--/container-->
